@@ -1,5 +1,6 @@
 package modell;
 
+import java.io.Serializable;
 import java.text.Collator;
 import java.time.LocalDate;
 import java.util.Comparator;
@@ -24,7 +25,7 @@ class gyartoComparator implements Comparator<Elelmiszer> {
 
 }
 
-public abstract class Elelmiszer {
+public abstract class Elelmiszer implements Serializable{
 
     private LocalDate datum;
     private String nev, gyarto;
